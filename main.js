@@ -27,3 +27,19 @@ const juanita = new Student('Juanita',20,[
   'Curso de introducción a la terminal',
   'Curso practico de PHP'
 ])
+
+//Prototypes with class sintax
+class Student2 {
+  constructor({name,age,email,approvedCourse=[]}){
+    this.name = name;
+    this.age = age;
+    this.approvedCourse = approvedCourse; 
+    this.email = email
+  }
+}
+
+const miguelito = new Student2({
+  email: 'miguelito@platzi.com',
+  age: 28,
+  name: 'Miguel'
+})
